@@ -1,4 +1,4 @@
-# In Search of the Robust Facial Expressions RecognitionModel: The Visual Cross-Corpus Study
+# In Search of the Robust Facial Expressions Recognition Model: The Visual Cross-Corpus Study
 
 In this paper we present the largest visual emotion recognition cross-corpus study to date.  We suggested a novel and effective end-to-end emotion recogni-tion framework consisted of two key elements, which are employed for differentfunctions:
 
