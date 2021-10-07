@@ -10,9 +10,9 @@ During the research, the backbone model was fine-tuned on the largest facial exp
 
 In this repository we offer for general use [the backbone emotion recognition model](https://drive.google.com/drive/u/0/folders/1_AvhddwG9_-WuArYleWmE2AjTH5MbCkR) and [6 CNN-LSTM models](https://drive.google.com/drive/u/0/folders/1CSpYFAq1V_G4Lk5WCnEmU7mzdAoJMf0C) obtained as a result leave-one-corpus-out cross-validation.
 
-### Table. Results (Unweighted average recall (UAR, %)) of leave-one-corpus-out cross-validation
+### Table. Results (Unweighted average recall, UAR) of leave-one-corpus-out cross-validation
 
-| Train datasets | Test dataset | Name model |UAR |
+| Train datasets | Test dataset | Name model |UAR, % |
 | - | ---- | ---- | ---- |
 | RAVDESS, CREMA-D, SAVEE, RAMAS, IEMOCAP| Aff-Wild2 | Aff-Wild2 | 51,6 |
 | Aff-Wild2, CREMA-D, SAVEE, RAMAS, IEMOCAP| RAVDESS | RAVDESS | 65,8 |
