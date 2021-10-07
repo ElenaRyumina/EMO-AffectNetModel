@@ -12,7 +12,7 @@ In this repository we offer for general use [the backbone emotion recognition mo
 
 ### Table. Results (Unweighted average recall (UAR, %)) of leave-one-corpus-out cross-validation
 
-| Train datasets | Test datasets | Name model |UAR |
+| Train datasets | Test dataset | Name model |UAR |
 | - | ---- | ---- | ---- |
 | RAVDESS, CREMA-D, SAVEE, RAMAS, IEMOCAP| Aff-Wild2 | Aff-Wild2 | 51,6 |
 | Aff-Wild2, CREMA-D, SAVEE, RAMAS, IEMOCAP| RAVDESS | RAVDESS | 65,8 |
