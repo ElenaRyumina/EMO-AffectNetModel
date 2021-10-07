@@ -22,7 +22,9 @@ In this repository we offer for general use [the backbone emotion recognition mo
 | Aff-Wild2, RAVDESS, CREMA-D, SAVEE, RAMAS| IEMOCAP | IEMOCAP | 25,1|
 
 You need run ``check_valid_set_Affectnet.ipynb`` for checking of AffectNet validation set.
+
 You need run ``get_face_area.ipynb`` for getting of face ares from video.
+
 You need run ``test_LSTM_RAVDESS.ipynb`` for checking of CNN-LSTM model.
 
 ### Links to papers
