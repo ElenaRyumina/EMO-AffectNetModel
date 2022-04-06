@@ -27,6 +27,13 @@ You need run ``get_face_area.ipynb`` to get face areas from video.
 
 You need run ``test_LSTM_RAVDESS.ipynb`` to check dynamic video using one CNN-LSTM model as an example.
 
+You need rum ``python run.py --path_video video/ --path_save report/`` to emotion prediction for all videos in the your folder. 
+
+For clarity, we took several videos from the RAVDESS corpus and tested our pipeline. We got the next output: 
+<h4 align="center"><img src="./figures/results_emo_pred_videos.PNG" alt="myresults_emo_pred_videos" width="98%" /></h4>
+
+
+
 ### Links to papers
 
 - [Q. Cao, L. Shen, W. Xie, O. M. Parkhi and A. Zisserman, "VGGFace2: A Dataset for Recognising Faces across Pose and Age," 2018 13th IEEE International Conference on Automatic Face & Gesture Recognition (FG 2018), 2018, pp. 67-74, doi: 10.1109/FG.2018.00020.](https://ieeexplore.ieee.org/document/8373813)
