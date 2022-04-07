@@ -54,10 +54,10 @@ def pred_one_video(path):
         os.makedirs(args.path_save)
         
     filename = os.path.basename(path)[:-4] + '.csv'
-    df.to_csv(args.path_save+filename, index=False)
+    df.to_csv(os.path.join(args.path_save,filename), index=False)
     end_time = time.time() - start_time
     mode = stats.mode(np.argmax(pred, axis=1))[0][0]
-    print('Report saved in: ', args.path_save+filename)
+    print('Report saved in: ', os.path.join(args.path_save,filename))
     print('Predicted emotion: ', label_model[mode])
     print('Lead time: {} s'.format(np.round(end_time, 2)))
     print()
