@@ -34,10 +34,10 @@ For clarity, we took several videos from the RAVDESS corpus and tested our pipel
 
 You need to run ``python visualization.py`` to get new videos with emotion prediction. Below are examples of test videos:
 
-<div style="width: 100%; margin: 0px auto;">
-    <img src="./gif/01-01-03-02-02-01-01.gif" alt="01-01-03-02-02-01-01" width="33.33%" style="float: left; display: inline-block;"/>
-    <img src="./gif/01-01-05-02-01-02-14.gif" alt="01-01-05-02-01-02-14" width="33.33%" style="float: left; display: inline-block;"/>
-    <img src="./gif/01-01-07-02-02-02-06.gif" alt="01-01-07-02-02-02-06" width="33.33%" style="float: left; display: inline-block;"/>
+<div style="width: 100%; margin: 0px auto; text-align: center;">
+    <img src="./gif/01-01-03-02-02-01-01.gif" alt="01-01-03-02-02-01-01" width="32%" style="float: left; display: inline-block;"/>
+    <img src="./gif/01-01-05-02-01-02-14.gif" alt="01-01-05-02-01-02-14" width="32%" style="float: left; display: inline-block;"/>
+    <img src="./gif/01-01-07-02-02-02-06.gif" alt="01-01-07-02-02-02-06" width="32%" style="float: left; display: inline-block;"/>
 </div>
 
 ### Links to papers
