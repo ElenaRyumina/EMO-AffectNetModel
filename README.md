@@ -1,5 +1,11 @@
 # In Search of the Robust Facial Expressions Recognition Model: The Visual Cross-Corpus Study
 
+<h4 align="center">
+    <img src="./gif/test_AffWild2.gif" alt="test_AffWild2" width="32%" style="float: left; display: inline-block;"/>
+    <img src="./gif/test_CREMA-D.gif" alt="test_CREMA-D" width="24%" style="float: left; display: inline-block;"/>
+    <img src="./gif/test_SAVEE.gif" alt="test_SAVEE" width="22.5%" style="float: left; display: inline-block;"/>
+</h4>
+
 In this paper we present the largest visual emotion recognition cross-corpus study to date.  We suggested a novel and effective end-to-end emotion recogni-tion framework consisted of two key elements, which are employed for differentfunctions:
 
 (1) the backbone emotion recognition model, which is based on the VGGFace2 ([Cao et al., 2018](https://ieeexplore.ieee.org/document/8373813)) ResNet50 model ([He et al., 2016](https://ieeexplore.ieee.org/document/7780459)), trained in a balanced way, and is able to predictemotion from the raw image with high performance; 
