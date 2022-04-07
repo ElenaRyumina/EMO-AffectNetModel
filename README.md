@@ -30,9 +30,12 @@ You need run ``test_LSTM_RAVDESS.ipynb`` to check dynamic video using one CNN-LS
 You need rum ``python run.py --path_video video/ --path_save report/`` to emotion prediction for all videos in the your folder. 
 
 For clarity, we took several videos from the RAVDESS corpus and tested our pipeline. We got the next output: 
-<h4 align="center"><img src="./figures/results_emo_pred_videos.PNG" alt="myresults_emo_pred_videos" width="98%" /></h4>
+<h4 align="center"><img src="./figures/results_emo_pred_videos.PNG" alt="results_emo_pred_videos" width="98%" /></h4>
 
-
+You need to run ``python visualization.py`` to get new videos with emotion prediction. Below are examples of test videos:
+<h4 align="center"><img src="./gif/01-01-03-02-02-01-01.gif" alt="01-01-03-02-02-01-01" width="50%" /></h4>
+<h4 align="center"><img src="./gif/01-01-05-02-01-02-14.gif" alt="01-01-05-02-01-02-14" width="50%" /></h4>
+<h4 align="center"><img src="./gif/01-01-07-02-02-02-06.gif" alt="01-01-07-02-02-02-06" width="50%" /></h4>
 
 ### Links to papers
 
