@@ -6,15 +6,15 @@
     <img src="./gif/test_3_AffWild2.gif" alt="test_3_AffWild2" width="32%" style="float: left; display: inline-block;"/>
 </h4>
 
-In this paper we present the largest visual emotion recognition cross-corpus study to date.  We suggested a novel and effective end-to-end emotion recogni-tion framework consisted of two key elements, which are employed for differentfunctions:
+In this paper we present the largest visual emotion recognition cross-corpus study to date.  We suggested a novel and effective end-to-end emotion recognition framework consisted of two key elements, which are employed for differentfunctions:
 
-(1) the backbone emotion recognition model, which is based on the VGGFace2 ([Cao et al., 2018](https://ieeexplore.ieee.org/document/8373813)) ResNet50 model ([He et al., 2016](https://ieeexplore.ieee.org/document/7780459)), trained in a balanced way, and is able to predictemotion from the raw image with high performance; 
+(1) the backbone emotion recognition model, which is based on the VGGFace2 ([Cao et al., 2018](https://ieeexplore.ieee.org/document/8373813)) ResNet50 model ([He et al., 2016](https://ieeexplore.ieee.org/document/7780459)), trained in a balanced way, and is able to predict emotion from the raw image with high performance; 
 
-(2) the temporal block stacked on top of the backbone model and trained with dynamic visual emotional datasets (RAVDESS ([Livingstone et al., 2018](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0196391)), CREMA-D ([Cao et al., 2014](https://ieeexplore.ieee.org/document/6849440)), SAVEE ([Haq et al., 2008](http://personal.ee.surrey.ac.uk/Personal/P.Jackson/pub/avsp08/HaqJacksonEdge_AVSP08.pdf)), RAMAS ([Perepelkina et al., 2018](https://doi.org/10.1007/978-3-319-99579-3_52)), IEMOCAP ([Busso et al., 2008](https://doi.org/10.1007/s10579-008-9076-6)), Aff-Wild2 ([Kollias et al., 2018](https://arxiv.org/abs/1811.07770))) usingthe cross-corpus protocol in order to show its reliability and effectiveness.
+(2) the temporal block stacked on top of the backbone model and trained with dynamic visual emotional datasets (RAVDESS ([Livingstone et al., 2018](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0196391)), CREMA-D ([Cao et al., 2014](https://ieeexplore.ieee.org/document/6849440)), SAVEE ([Haq et al., 2008](http://personal.ee.surrey.ac.uk/Personal/P.Jackson/pub/avsp08/HaqJacksonEdge_AVSP08.pdf)), RAMAS ([Perepelkina et al., 2018](https://doi.org/10.1007/978-3-319-99579-3_52)), IEMOCAP ([Busso et al., 2008](https://doi.org/10.1007/s10579-008-9076-6)), Aff-Wild2 ([Kollias et al., 2018](https://arxiv.org/abs/1811.07770))) using the cross-corpus protocol in order to show its reliability and effectiveness.
 
 During the research, the backbone model was fine-tuned on the largest facial expression dataset AffectNet ([Mollahosseini et al., 2019](https://ieeexplore.ieee.org/document/8013713)) contained static images.  Our backbone model achieved an accuracy of 66.4 % on the AffectNet validation set.
 
-In this repository we offer for general use [the backbone emotion recognition model](https://drive.google.com/drive/u/0/folders/1_AvhddwG9_-WuArYleWmE2AjTH5MbCkR) and [6 CNN-LSTM models](https://drive.google.com/drive/u/0/folders/1CSpYFAq1V_G4Lk5WCnEmU7mzdAoJMf0C) obtained as a result leave-one-corpus-out cross-validation.
+In this GitHub repository we propose for common use (for scientific usage only) [the backbone emotion recognition model](https://drive.google.com/drive/u/0/folders/1_AvhddwG9_-WuArYleWmE2AjTH5MbCkR) and [6 CNN-LSTM models](https://drive.google.com/drive/u/0/folders/1CSpYFAq1V_G4Lk5WCnEmU7mzdAoJMf0C) obtained as a result of leave-one-corpus-out cross-validation experiment.
 
 ### Table. Results (Unweighted average recall, UAR) of leave-one-corpus-out cross-validation
 
@@ -27,18 +27,18 @@ In this repository we offer for general use [the backbone emotion recognition mo
 | Aff-Wild2, RAVDESS, CREMA-D, SAVEE, IEMOCAP| RAMAS | RAMAS | 44,3|
 | Aff-Wild2, RAVDESS, CREMA-D, SAVEE, RAMAS| IEMOCAP | IEMOCAP | 25,1|
 
-You need run ``check_valid_set_Affectnet.ipynb`` to check AffectNet validation set.
+To check the AffectNet validation set, you should run ``check_valid_set_Affectnet.ipynb``.
 
-You need run ``get_face_area.ipynb`` to get face areas from video.
+To get face areas from video, you should run ``get_face_area.ipynb``.
 
-You need run ``test_LSTM_RAVDESS.ipynb`` to check dynamic video using one CNN-LSTM model as an example.
+To check dynamic video using one CNN-LSTM model as an example, you should run ``test_LSTM_RAVDESS.ipynb``.
 
-You need rum ``python run.py --path_video video/ --path_save report/`` to emotion prediction for all videos in the your folder. 
+To predict emotions for all videos in your folder, you should run the command ``python run.py --path_video video/ --path_save report/``. 
 
-For clarity, we took several videos from the RAVDESS corpus and tested our pipeline. We got the next output: 
+To demonstrate the functioning of our pipeline, we have run it on several videos from the RAVDESS corpus. The output is: 
 <h4 align="center"><img src="./figures/results_emo_pred_videos.PNG" alt="results_emo_pred_videos" width="98%" /></h4>
 
-You need to run ``python visualization.py`` to get new videos with emotion prediction. Below are examples of test videos:
+To get new video file with visualization of emotion prediction for each frame, you should run the command ``python visualization.py``. Below are examples of test videos:
 
 <h4 align="center">
     <img src="./gif/01-01-03-02-02-01-01_v2.gif" alt="01-01-03-02-02-01-01" width="32%" style="float: left; display: inline-block;"/>
