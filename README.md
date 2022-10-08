@@ -14,7 +14,7 @@ In this paper we present the largest visual emotion recognition cross-corpus stu
 
 During the research, the backbone model was fine-tuned on the largest facial expression dataset AffectNet ([Mollahosseini et al., 2019](https://ieeexplore.ieee.org/document/8013713)) contained static images.  Our backbone model achieved an accuracy of 66.4 % on the AffectNet validation set.
 
-In this GitHub repository we propose for common use (for scientific usage only) [the backbone emotion recognition model](https://drive.google.com/drive/u/0/folders/1_AvhddwG9_-WuArYleWmE2AjTH5MbCkR) and [6 CNN-LSTM models](https://drive.google.com/drive/u/0/folders/1CSpYFAq1V_G4Lk5WCnEmU7mzdAoJMf0C) obtained as a result of leave-one-corpus-out cross-validation experiment.
+In this GitHub repository we propose for common use (for scientific usage only) [the backbone emotion recognition model](https://drive.google.com/drive/u/0/folders/1_AvhddwG9_-WuArYleWmE2AjTH5MbCkR) and [6 LSTM models](https://drive.google.com/drive/u/0/folders/1CSpYFAq1V_G4Lk5WCnEmU7mzdAoJMf0C) obtained as a result of leave-one-corpus-out cross-validation experiment.
 
 ### Table. Results (Unweighted average recall, UAR) of leave-one-corpus-out cross-validation
 
