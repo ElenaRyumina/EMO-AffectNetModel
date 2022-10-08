@@ -1,4 +1,4 @@
-def segurnces(all_path, all_feature, win = 10, step = 5):  
+def sequences(all_path, all_feature, win = 10, step = 5):  
     seq_path = []
     seq_feature_AN = []
     for id_cur in range(0, len(all_path)+1, step):

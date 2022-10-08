@@ -33,7 +33,7 @@ def pred_one_video(path):
     EE_model = load_weights_EE(args.path_FE_model)
     LSTM_model = load_weights_LSTM(args.path_LSTM_model)
     features = EE_model(np.stack(face_areas))
-    seq_paths, seq_features = sequences.segurnces(name_frames, features)
+    seq_paths, seq_features = sequences.sequences(name_frames, features)
     pred = LSTM_model(np.stack(seq_features)).numpy()
     all_pred = []
     all_path = []
