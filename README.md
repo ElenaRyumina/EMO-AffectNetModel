@@ -1,9 +1,9 @@
 # In Search of the Robust Facial Expressions Recognition Model: The Visual Cross-Corpus Study
 
 <h4 align="center">
-    <img src="./gif/test_02_AffWild2.gif" alt="test_4_AffWild2" style="max-width: 32%; float: left; display: inline-block !important;"/>
-    <img src="./gif/test_03_AffWild2.gif" alt="test_2_AffWild2" style="max-width: 32%; float: left; display: inline-block !important;"/>
-    <img src="./gif/test_04_AffWild2.gif" alt="test_3_AffWild2" style="max-width: 32%; float: left; display: inline-block !important;"/>
+    <img src="./gif/test_02_AffWild2.gif?raw=true" alt="test_4_AffWild2" style="max-width: 32%; float: left; display: inline-block !important;"/>
+    <img src="./gif/test_03_AffWild2.gif?raw=true" alt="test_2_AffWild2" style="max-width: 32%; float: left; display: inline-block !important;"/>
+    <img src="./gif/test_04_AffWild2.gif?raw=true" alt="test_3_AffWild2" style="max-width: 32%; float: left; display: inline-block !important;"/>
 </h4>
 
 In this paper we present the largest visual emotion recognition cross-corpus study to date.  We suggested a novel and effective end-to-end emotion recognition framework consisted of two key elements, which are employed for differentfunctions:
