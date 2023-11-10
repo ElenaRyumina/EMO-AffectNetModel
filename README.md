@@ -40,11 +40,11 @@ To demonstrate the functioning of our pipeline, we have run it on several videos
 
 To get new video file with visualization of emotion prediction for each frame, you should run the command ``python visualization.py``. Below are examples of test videos:
 
-<h4 align="center">
-    <img src="./gif/01-01-03-02-02-01-01_v2.gif" alt="01-01-03-02-02-01-01" style="max-width: 32%; float: left; display: inline-block;"/>
-    <img src="./gif/01-01-05-02-01-02-14_v2.gif" alt="01-01-05-02-01-02-14" style="max-width: 32%; float: left; display: inline-block;"/>
-    <img src="./gif/01-01-07-02-02-02-06_v2.gif" alt="01-01-07-02-02-02-06" style="max-width: 32%; float: left; display: inline-block;"/>
-</h4>
+<p align="center">
+    <img width="32%" src="./gif/01-01-03-02-02-01-01_v2.gif" alt="01-01-03-02-02-01-01"/>
+    <img width="32%" src="./gif/01-01-05-02-01-02-14_v2.gif" alt="01-01-05-02-01-02-14"/>
+    <img width="32%" src="./gif/01-01-07-02-02-02-06_v2.gif" alt="01-01-07-02-02-02-06"/>
+</p>
 
 ### Citation
 
