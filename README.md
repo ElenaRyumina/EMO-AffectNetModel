@@ -12,7 +12,7 @@ In this paper we present the largest visual emotion recognition cross-corpus stu
 
 (2) the temporal block stacked on top of the backbone model and trained with dynamic visual emotional datasets (RAVDESS ([Livingstone et al., 2018](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0196391)), CREMA-D ([Cao et al., 2014](https://ieeexplore.ieee.org/document/6849440)), SAVEE ([Haq et al., 2008](http://personal.ee.surrey.ac.uk/Personal/P.Jackson/pub/avsp08/HaqJacksonEdge_AVSP08.pdf)), RAMAS ([Perepelkina et al., 2018](https://doi.org/10.1007/978-3-319-99579-3_52)), IEMOCAP ([Busso et al., 2008](https://doi.org/10.1007/s10579-008-9076-6)), Aff-Wild2 ([Kollias et al., 2018](https://arxiv.org/abs/1811.07770))) using the cross-corpus protocol in order to show its reliability and effectiveness.
 
-During the research, the backbone model was fine-tuned on the largest facial expression dataset AffectNet ([Mollahosseini et al., 2019](https://ieeexplore.ieee.org/document/8013713)) contained static images.  Our backbone model achieved an accuracy of 66.4 % on the AffectNet validation set.
+During the research, the backbone model was fine-tuned on the largest facial expression dataset AffectNet ([Mollahosseini et al., 2019](https://ieeexplore.ieee.org/document/8013713)) contained static images.  Our backbone model achieved an accuracy of 66.4 % on the AffectNet validation set. We achieved 66.5% accuracy using [label smoothing technique](https://arxiv.org/abs/1906.02629).
 
 In this GitHub repository we propose for common use (for scientific usage only) [the backbone emotion recognition model](https://drive.google.com/drive/u/0/folders/1_AvhddwG9_-WuArYleWmE2AjTH5MbCkR) and [6 LSTM models](https://drive.google.com/drive/u/0/folders/1CSpYFAq1V_G4Lk5WCnEmU7mzdAoJMf0C) obtained as a result of leave-one-corpus-out cross-validation experiment.
 
@@ -27,7 +27,7 @@ In this GitHub repository we propose for common use (for scientific usage only) 
 | Aff-Wild2, RAVDESS, CREMA-D, SAVEE, IEMOCAP| RAMAS | RAMAS | 44,3|
 | Aff-Wild2, RAVDESS, CREMA-D, SAVEE, RAMAS| IEMOCAP | IEMOCAP | 25,1|
 
-To check the AffectNet validation set, you should run ``check_valid_set_Affectnet.ipynb``.
+We provide two backbone models trained using the tensorflow framefork. Both [tensorflow models](https://drive.google.com/drive/folders/1-xNKmpBOw4oRMxpZAcAct5gqSkH2j8x3?usp=drive_link) have been converted to [torch model](https://drive.google.com/drive/folders/1f6nIW2DjwslvHkJwTfnqOKosulQQ4vwh?usp=drive_link). To check four models on the AffectNet validation set, you should run ``check_tf_torch_models_on_Affectnet.ipynb``.
 
 To get face areas from video, you should run ``get_face_area.ipynb``.
 
