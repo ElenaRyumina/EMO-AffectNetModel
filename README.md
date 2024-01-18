@@ -27,7 +27,7 @@ In this GitHub repository we propose for common use (for scientific usage only) 
 | Aff-Wild2, RAVDESS, CREMA-D, SAVEE, IEMOCAP| RAMAS | RAMAS | 44,3|
 | Aff-Wild2, RAVDESS, CREMA-D, SAVEE, RAMAS| IEMOCAP | IEMOCAP | 25,1|
 
-We provide two backbone models trained using the tensorflow framefork. Both [tensorflow models](https://drive.google.com/drive/folders/1-xNKmpBOw4oRMxpZAcAct5gqSkH2j8x3?usp=drive_link) have been converted to [torch model](https://drive.google.com/drive/folders/1f6nIW2DjwslvHkJwTfnqOKosulQQ4vwh?usp=drive_link). To check four models on the AffectNet validation set, you should run ``check_tf_torch_models_on_Affectnet.ipynb``.
+We provide two backbone models trained using the tensorflow framefork. Both [tensorflow models](https://drive.google.com/drive/folders/1-xNKmpBOw4oRMxpZAcAct5gqSkH2j8x3?usp=drive_link) have been converted to [torch models](https://drive.google.com/drive/folders/1f6nIW2DjwslvHkJwTfnqOKosulQQ4vwh?usp=drive_link). To check four models on the AffectNet validation set, you should run ``check_tf_torch_models_on_Affectnet.ipynb``.
 
 To get face areas from video, you should run ``get_face_area.ipynb``.
 
