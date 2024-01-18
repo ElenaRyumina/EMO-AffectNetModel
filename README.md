@@ -29,7 +29,7 @@ In this GitHub repository we propose for common use (for scientific usage only) 
 
 We provide two backbone models trained using the tensorflow framefork. Both [tensorflow models](https://drive.google.com/drive/folders/1-xNKmpBOw4oRMxpZAcAct5gqSkH2j8x3?usp=drive_link) have been converted to [TorchScript models](https://drive.google.com/drive/folders/1f6nIW2DjwslvHkJwTfnqOKosulQQ4vwh?usp=drive_link). To check four models on the AffectNet validation set, you should run ``check_tf_torch_models_on_Affectnet.ipynb``.
 
-To check backbone models by webcam, you should run ``check_backbone_model_by_webcam``. Webcam result:
+To check backbone models by webcam, you should run ``check_backbone_models_by_webcam``. Webcam result:
 
 <p align="center">
     <img width="50%" src="./gif/result.gif" alt="result"/>
