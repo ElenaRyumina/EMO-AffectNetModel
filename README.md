@@ -35,9 +35,11 @@ To check backbone models by webcam, you should run ``check_backbone_models_by_we
     <img width="50%" src="./gif/result.gif" alt="result"/>
 </p>
 
-To get face areas from video, you should run ``get_face_area.ipynb``.
+We provide six temporal (LSTM) models trained using the tensorflow framefork. All [tensorflow models](https://drive.google.com/drive/u/0/folders/12aZyWV7QSDpgYH-ZgyvFtR0GA-fXAiHc) have been converted to [TorchScript models](https://drive.google.com/drive/u/0/folders/12FMeRQABp7zXvAygofQRk75mFiPVwZNQ). To check backbone and temporal models (CNN+LSTM) by webcam, you should run ``check_temporal_models_by_webcam``. Webcam result:
 
-To check dynamic video using one CNN-LSTM model as an example, you should run ``test_LSTM_RAVDESS.ipynb``.
+<p align="center">
+    <img width="50%" src="./gif/result_2.gif" alt="result"/>
+</p>
 
 To predict emotions for all videos in your folder, you should run the command ``python run.py --path_video video/ --path_save report/``. 
 
