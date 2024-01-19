@@ -1,5 +1,7 @@
 # In Search of the Robust Facial Expressions Recognition Model: The Visual Cross-Corpus Study
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/in-search-of-a-robust-facial-expressions/facial-expression-recognition-on-affectnet)](https://paperswithcode.com/paper/in-search-of-a-robust-facial-expressions)
+
 <p align="center">
     <img width="32%" src="./gif/test_02_AffWild2.gif?raw=true" alt="test_4_AffWild2"/>
     <img  width="32%" src="./gif/test_03_AffWild2.gif?raw=true" alt="test_2_AffWild2"/>
