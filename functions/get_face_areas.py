@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
 import os
+from functions import utils
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-from keras_vggface import utils
 from tensorflow.keras.preprocessing.image import img_to_array
 from batch_face import RetinaFace
 
@@ -30,6 +30,8 @@ class VideoCamera(object):
         return cur_fr
             
     def get_frame(self):
+        print()
+        print(self.path_video)
         self.video = cv2.VideoCapture(self.path_video)
         total_frame = int(self.video.get(cv2.CAP_PROP_FRAME_COUNT))
         fps = np.round(self.video.get(cv2.CAP_PROP_FPS))

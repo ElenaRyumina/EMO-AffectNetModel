@@ -4,6 +4,7 @@ import os
 import pandas as pd
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 from batch_face import RetinaFace
+from tensorflow.keras.preprocessing.image import img_to_array
 
 class VideoCamera(object):
     def __init__(self, path_video='', path_report='', path_save='', name_labels = '', conf=0.7):

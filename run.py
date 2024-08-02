@@ -16,9 +16,9 @@ parser = argparse.ArgumentParser(description="run")
 parser.add_argument('--path_video', type=str, default='video/', help='Path to all videos')
 parser.add_argument('--path_save', type=str, default='report/', help='Path to save the report')
 parser.add_argument('--conf_d', type=float, default=0.7, help='Elimination threshold for false face areas')
-parser.add_argument('--path_FE_model', type=str, default='models/EmoAffectnet/weights_66_37.h5',
+parser.add_argument('--path_FE_model', type=str, default='models/EmoAffectnet/weights_0_66_37_wo_gl.h5',
                     help='Path to a model for feature extraction')
-parser.add_argument('--path_LSTM_model', type=str, default='models/LSTM/for_RAVDESS.h5',
+parser.add_argument('--path_LSTM_model', type=str, default='models/LSTM/RAVDESS_with_config.h5',
                     help='Path to a model for emotion prediction')
 
 args = parser.parse_args()
@@ -29,7 +29,7 @@ def pred_one_video(path):
     detect = get_face_areas.VideoCamera(path_video=path, conf=args.conf_d)
     dict_face_areas, total_frame = detect.get_frame()
     name_frames = list(dict_face_areas.keys())
-    face_areas = dict_face_areas.values()
+    face_areas = list(dict_face_areas.values())
     EE_model = load_weights_EE(args.path_FE_model)
     LSTM_model = load_weights_LSTM(args.path_LSTM_model)
     features = EE_model(np.stack(face_areas))
@@ -56,7 +56,7 @@ def pred_one_video(path):
     filename = os.path.basename(path)[:-4] + '.csv'
     df.to_csv(os.path.join(args.path_save,filename), index=False)
     end_time = time.time() - start_time
-    mode = stats.mode(np.argmax(pred, axis=1))[0][0]
+    mode = stats.mode(np.argmax(pred, axis=1))[0]
     print('Report saved in: ', os.path.join(args.path_save,filename))
     print('Predicted emotion: ', label_model[mode])
     print('Lead time: {} s'.format(np.round(end_time, 2)))
